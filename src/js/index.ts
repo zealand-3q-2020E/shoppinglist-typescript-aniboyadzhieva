@@ -52,5 +52,15 @@ console.log(firstChild);
 var lastChild = document.getElementById("0").lastChild.nodeName;
 console.log(lastChild);
 
+//Task 5 
+var node = document.createElement("li");
+var textnode = document.createTextNode("Donut");
+node.appendChild(textnode);
+document.getElementById("list").appendChild(node);
+
+
+
+
+
 
 

@@ -33,5 +33,16 @@ console.log(element)
 }
 }
 
+//Task 3 
+let myElementChanged:HTMLLIElement = <HTMLLIElement> document.getElementById("2");
+myElementChanged.setAttribute("class", "middle")
+console.log(myElementChanged);
+
+let myElementHidden:HTMLLIElement = <HTMLLIElement> document.getElementById("3");
+myElementHidden.hidden = true;
+console.log(myElementHidden);
+
+
+
 
 

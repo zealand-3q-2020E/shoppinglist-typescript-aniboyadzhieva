@@ -42,7 +42,15 @@ let myElementHidden:HTMLLIElement = <HTMLLIElement> document.getElementById("3")
 myElementHidden.hidden = true;
 console.log(myElementHidden);
 
+//Task 4
+var parentNode = document.getElementById("0").parentNode.nodeName;
+console.log(parentNode);
 
+var firstChild = document.getElementById("0").firstChild.nodeName;
+console.log(firstChild);
+
+var lastChild = document.getElementById("0").lastChild.nodeName;
+console.log(lastChild);
 
 
 

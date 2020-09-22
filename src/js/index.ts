@@ -12,9 +12,26 @@ let myList:HTMLCollectionOf<HTMLLIElement> =
 //var myList = document.getElementsByClassName("healthy");
 //console.log(myList);
 
-let myElements2:HTMLCollectionOf<HTMLLIElement> =
+let myList2:HTMLCollectionOf<HTMLLIElement> =
     <HTMLCollectionOf<HTMLLIElement>> document.getElementsByTagName("li");
-    console.log(myElements2);
+    console.log(myList2);
+
+//Task 2
+for(let i =0; i < myList2.length; i++)
+{
+const element = myList2[i];
+console.log(element)
+{
+    if(element.getAttribute("class") == "healthy")
+    {
+        element.setAttribute("class", "unhealthy")  
+    }
+    else
+    {
+        element.setAttribute("class" , "healthy" )
+    }   
+}
+}
 
 
 
